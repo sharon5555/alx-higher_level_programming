@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-"""returns the __dict__ attribute of an object"""
+"""This module defines a Python class-to-JSON function"""
 
 
 def class_to_json(obj):
-    """uses the built-in vars() method to return
-    the __dict__ attribute of obj
-    Args:
-        obj (Class): object to return changeable attributes
-    """
-    return vars(obj)
+    """Returns the dictionary representation of a simple data structure"""
+    return obj.__dict__
